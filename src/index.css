@@ -9,10 +9,10 @@
     --primary-dark: #e65c00;
     --secondary-color: #000000;
     --dark-bg: #000000;
-    --light-bg: #ffffff;
-    --gray-bg: #f5f5f5;
-    --text-dark: #000000;
-    --text-light: #666666;
+    --light-bg: #000000;
+    --gray-bg: #1a1a1a;
+    --text-dark: #ffffff;
+    --text-light: #cccccc;
     --white: #ffffff;
     --gradient: linear-gradient(135deg, #ff6b00 0%, #ff8533 100%);
     --accent-yellow: #ffd700;
@@ -25,6 +25,7 @@ body {
     overflow-x: hidden;
     font-weight: 400;
     letter-spacing: 0.3px;
+    background-color: var(--dark-bg);
 }
 
 .container {
@@ -35,13 +36,13 @@ body {
 
 /* Navigation */
 .navbar {
-    background: var(--white);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    background: var(--dark-bg);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.08);
     position: sticky;
     top: 0;
     z-index: 1000;
     padding: 1.2rem 0;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #333333;
 }
 
 .navbar .container {
@@ -279,7 +280,7 @@ body {
 /* Features Section */
 .features {
     padding: 100px 0;
-    background: var(--white);
+    background: var(--dark-bg);
 }
 
 .section-title {
@@ -308,12 +309,12 @@ body {
 }
 
 .feature-card {
-    background: var(--white);
+    background: var(--gray-bg);
     padding: 2.5rem;
     border-radius: 0;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.08);
     border-left: 4px solid transparent;
 }
 
@@ -357,14 +358,14 @@ body {
 }
 
 .course-card {
-    background: var(--white);
+    background: var(--dark-bg);
     padding: 0;
     border-radius: 0;
     border: none;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 15px rgba(255, 255, 255, 0.08);
 }
 
 .course-card.featured {
@@ -416,7 +417,7 @@ body {
 
 .course-highlights li {
     padding: 0.6rem 0;
-    color: var(--text-dark);
+    color: var(--text-light);
     position: relative;
     padding-left: 1.8rem;
     font-weight: 500;
@@ -447,7 +448,7 @@ body {
 /* Contact Section */
 .contact {
     padding: 100px 0;
-    background: var(--white);
+    background: var(--dark-bg);
 }
 
 .contact-subtitle {
@@ -469,19 +470,20 @@ body {
 .form-input,
 .form-textarea {
     padding: 1.2rem;
-    border: 2px solid #ddd;
+    border: 2px solid #444444;
     border-radius: 0;
     font-size: 1rem;
     font-family: inherit;
     transition: border-color 0.3s ease;
     background: var(--gray-bg);
+    color: var(--text-dark);
 }
 
 .form-input:focus,
 .form-textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    background: var(--white);
+    background: var(--dark-bg);
 }
 
 .contact-form .btn-primary {
@@ -709,20 +711,15 @@ body {
 }
 
 .modal-content {
-    background-color: white;
+    background-color: var(--dark-bg);
     padding: 2.5rem;
     border-radius: 0;
     text-align: center;
     max-width: 90%;
     width: 400px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
     position: relative;
     animation: slideIn 0.3s ease;
-}
-
-@keyframes slideIn {
-    from { transform: translateY(-50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
 }
 
 .modal-content h3 {
@@ -816,7 +813,7 @@ body {
 /* Learn More Content */
 .content-section {
     padding: 80px 0;
-    background: var(--white);
+    background: var(--dark-bg);
 }
 
 .content-block {
@@ -838,7 +835,7 @@ body {
 .content-text {
     font-size: 1.1rem;
     line-height: 1.9;
-    color: var(--text-dark);
+    color: var(--text-light);
     margin-bottom: 1.5rem;
 }
 

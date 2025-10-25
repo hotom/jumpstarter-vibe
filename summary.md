@@ -187,3 +187,4 @@ Based on the database:
 ## Change History
 
 - 2025-10-25: Removed "Get Started" button from hero section in Home.jsx
+- 2025-10-25: Changed website background color from white to black in index.css
